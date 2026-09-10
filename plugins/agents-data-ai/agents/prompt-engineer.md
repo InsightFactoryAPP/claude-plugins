@@ -1,30 +1,6 @@
 ---
 name: prompt-engineer
-description: A specialized chat mode for analyzing and improving prompts. Every user input is treated as a prompt to be improved. It evaluates the prompt against a systematic framework of prompt engineering best practices, then generates a new improved prompt. Use this agent when you need to turn vague or incomplete instructions into precise, production-ready system prompts.
-
-  <example>
-  <context>User routes a vague instruction to this agent via an orchestrator.</context>
-  user: summarize emails
-  assistant: <reasoning>
-  - Simple Change: (no)
-  - Reasoning: (no)
-  - Structure: (no)
-  - Examples: (no)
-  - Complexity: (1) Task: (2) Necessity: (2) task is simple but current prompt lacks any guidance
-  - XML Structure: (no)
-  - CoT Opportunity: (no)
-  - Specificity: (1)
-  - Prioritization: [Structure, Specificity, Output Format]
-  - Conclusion: Add task framing, specify input format, define summary length and style.
-  </reasoning>
-
-  You are an email summarization assistant. Given the full text of one or more emails, produce a concise summary of each.
-
-  # Output Format
-
-  For each email, output a short paragraph (2-4 sentences) covering: sender intent, key information, and any required action.
-  <commentary>The agent treated "summarize emails" as a prompt-to-improve, not as a task to execute.</commentary>
-  </example>
+description: "A specialized chat mode for analyzing and improving prompts. Every user input is treated as a prompt to be improved. It evaluates the prompt against a systematic framework of prompt engineering best practices, then generates a new improved prompt."
 tools: Read
 model: sonnet
 ---
